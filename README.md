@@ -73,10 +73,11 @@ Download and compile this repository:
 cd ~
 git clone https://github.com/tristanbell/nao-autism.git
 cd nao-autism
-mv src/learner 
+mv src/learner (remove learner from src) 
 catkin_make
 catkin_make
-mv learner/ src/
+(now,put the learner floder in the src)
+mv learner/ src/  (remove src in the learner)
 catkin_make
 cmake tools/settings\ editor/CMakeLists.txt
 make -C tools/settings\ editor
