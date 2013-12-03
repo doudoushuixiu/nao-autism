@@ -73,21 +73,15 @@ Download and compile this repository:
 cd ~
 git clone https://github.com/tristanbell/nao-autism.git
 cd nao-autism
-catkin_make
-cmake tools/settings\ editor/CMakeLists.txt
-make -C tools/settings\ editor
-```
-!!!
-Also after libsvm has been installed, you will have to move the learner package out of the src folder, run catkin_make (I have to run it twice, for some reason) and then place the learner package back into the projects src folder. For some reason, catkin_make doesn't obey the build_depend tags in the project xml file (although it is probably a misuse of it).
-
-The commands I used to successfully catkin_make where the following.:
-
-mv src/learner .
+mv src/learner 
 catkin_make
 catkin_make
 mv learner/ src/
 catkin_make
-!!!
+cmake tools/settings\ editor/CMakeLists.txt
+make -C tools/settings\ editor
+```
+
 
 Create a new directory for the supporting Nao drivers, then make a new file called rosinstall.txt for installing the drivers:
 ```bash
