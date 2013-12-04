@@ -3,7 +3,7 @@
 const std::string NODE_NAME = "nao_control";
 
 const std::string SPEECH_TOPIC_NAME = "speech";
-const std::string BEHAVIOR_MANAGER_SERVER = "run_behavior";
+const std::string BEHAVIOR_MANAGER_SERVER = "run_behavior";  //for new ros_driver package
 
 /*
  * Sets up the required publishers/connections. This will wait until
